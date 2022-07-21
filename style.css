@@ -1,63 +1,100 @@
-.grid-container {
-        
-    display: grid;
-    grid-template-columns: 50% 50%;
-    background-color: white;
-    padding: 5px;
-    height: 100%;
-  }
-  .grid-item1{
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+* 
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
   
-      background-color: royalblue;
-      display: grid;
-  }
-  .grid-item{
-  
-  background-color: lightgrey;
-  display: grid;
-  }
-  h1, h3{
-      color: white;
-      font-weight: bolder;
-      margin-top: 25%;
-  }
-  span{
-      color: black;
-      font-weight: bolder;
-  }
-  p{
-      color: white;
-      
-  }
-  li{
-      color: white;
-      
-  }
-  .bdy{
-      margin-left: 20%;
-  }
-  .dd{
-      margin-left: 25%;
-      margin-top: 10%;
-  }
-  #pp{
-      color: black;
-  }
-  #show{
-      color: black;
-      font-size: xx-large;
-  }
-  #show1,#show3{
-      color: black;
-      font-size: medium;
-  }
-  #show2{
-      color: black;
-      font-size: xx-large;
-  }
-  #tt{
-      margin-left: 20%;
-      margin-top: 20%;
-  }
-     
-    
+.app-wrap {
+    background: linear-gradient(180deg, #7802ae, #460166);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-box {
+    height: 61px;
+    width: 217px;
+    border-top-left-radius: 30px;
+    border: none;
+    border-bottom-right-radius: 30px;
+    border-bottom: 4px solid #d5820c;
+    background: #9d4ec2;
+    outline: none;
+    padding: 0 5%;
+    font-size: larger;
+    color: #000000a6;
+    transition: 0.5s ease;
+    margin-bottom: 20px;
+}
+
+.search-box::placeholder {
+    color: #000000a6;
+    transition: 0.5s ease;
+}
+
+.search-box:focus::placeholder {
+    color: #9d4ec2;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search {
+    height: 6vh;
+    width: 7vw;
+    border: none;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    margin: 10% 0;
+    font-size: 2rem;
+    box-shadow: 0px 0px 12px 1px rgb(0 0 0 / 48%);
+    transition: 0.5s ease-out;
+    background: aliceblue;
+}
+
+:is(.location, .current) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: aliceblue;
+}
+
+.city {
+    font-size: 3rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.date{
+    font-size: 1.2rem;
+}
+
+.temp {
+    font-size: 7rem;
+    margin: 20% 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    text-shadow: 0px 8px 3px #260137;
+}
+
+.weather {
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: bolder;
+    font-family: 'Ubuntu', sans-serif;
+    text-shadow: 0px 1px 5px black;
+    margin-bottom: 10px;
+}
+
+.hi-low {
+    font-size: 1.5rem;
+    font-weight: 100;
+    text-shadow: 0px 1px 5px black;
+}
